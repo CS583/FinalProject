@@ -31,15 +31,17 @@ Content\Fonts\PowerUpFont.xnb
 Content\Models\ship1.xnb
 Content\Models\ship2.xnb
 Content\Models\energy.xnb
+Content\Models\earth.xnb
+Content\Models\rock1.xnb
+Content\Models\missile.xnb
 Content\Videos\Start.xnb
 Content\Models\ship1_c_0.xnb
 Content\Models\ship2_c_0.xnb
 Content\Models\energy_pwu_c_0.xnb
-Content\Models\earth.xnb
-Content\Models\rock1.xnb
-Content\FBX\878134C5\rock1.fbm\rock1_diffuse2_0.xnb
-Content\Models\missile.xnb
+Content\FBX\82A23A5C\rock1.fbm\rock1_diffuse2_0.xnb
 Content\Models\Missile_c_0.xnb
+Content\Fonts\DeveloperFont.xnb
+Content\Fonts\TitleFont.xnb
 Content\Videos\Start.wmv
 Content\Audio\GameAudio.xgs
 Content\Audio\Wave Bank.xwb

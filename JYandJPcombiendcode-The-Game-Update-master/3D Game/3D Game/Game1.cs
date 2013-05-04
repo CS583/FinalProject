@@ -78,14 +78,13 @@ namespace _3D_Game
         Texture2D crosshairTexture;
 
         // variables for game stats
-        public enum GameState { START, PLAY, LEVEL_CHANGE, END, PAUSE, MENU, ABOUT, INSTRUCTIONS }
+        public enum GameState { START, PLAY, LEVEL_CHANGE, END, PAUSE, MENU, INSTRUCTIONS }
         GameState currentGameState = GameState.MENU;
 
         SplashScreen splashScreen;
         int score = 0;
 
         StartMenu startMenu;
-        About about;
         Instructions instructions;
 
         //font for score
@@ -180,23 +179,10 @@ namespace _3D_Game
                     splashScreen.Visible = false;
                     startMenu.Visible = true;
                     startMenu.Enabled = true;
-                    about.Visible = false;
-                    about.Enabled = false;
                     instructions.Visible = false;
                     instructions.Enabled = false;
                     break;
 
-                case GameState.ABOUT:
-                    splashDelay = 10;
-                    modelManager.Enabled = false;
-                    modelManager.Visible = false;
-                    splashScreen.Enabled = false;
-                    splashScreen.Visible = false;
-                    startMenu.Visible = false;
-                    startMenu.Enabled = false;
-                    about.Visible = true;
-                    about.Enabled = true;
-                    break;
 
                 case GameState.INSTRUCTIONS:
                     splashDelay = 10;
@@ -206,8 +192,6 @@ namespace _3D_Game
                     splashScreen.Visible = false;
                     startMenu.Visible = false;
                     startMenu.Enabled = false;
-                    about.Visible = false;
-                    about.Enabled = false;
                     instructions.Visible = true;
                     instructions.Enabled = true;
                     break;
@@ -285,12 +269,6 @@ namespace _3D_Game
             //start menu
             startMenu = new StartMenu(this);
             Components.Add(startMenu);
-
-            //about page
-            about = new About(this);
-            Components.Add(about);
-            about.Visible = false;
-            about.Enabled = false;
 
             //instructions page
             instructions = new Instructions(this);
